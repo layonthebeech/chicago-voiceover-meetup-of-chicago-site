@@ -298,6 +298,13 @@ ul.footer-menu li a:hover {
     margin-top: .5em;
 }
 
+.fixed {
+    position: fixed;
+}
+.navbar {
+    width: 100%
+}
+
 /* ========================================
     Custom Media Queries
 ======================================== */
