@@ -52,64 +52,9 @@ a:hover, a:focus, a:active, a:visited {
 	text-align: center;
 }
 
-/* ------------------
-	Navigation 
------------------- */
-.side-menu {
-	position: fixed;
-	right: 30px;
-	top: 50%;
-    transform: translateY(-73px);
-    z-index: 99;
-}
-.side-menu ul li {
-    text-align: right;
-    margin: 10px 0;
-}
-.side-menu ul li a span {
-	display: inline-block;
-}
-.side-menu ul li a span.menu-title {
-	color: #fff;
-    position: relative;
-    margin-right: 10px;
-    text-transform: uppercase;
-    font-size: 12px;
-    background-color: #dd5138;
-    padding: 3px 10px;
-    font-weight: 600;
-    border-radius: 3px;
-    -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
-    -moz-transition: -moz-transform 0.2s, opacity 0.2s;
-    transition: transform 0.2s, opacity 0.2s;
-    -webkit-transform-origin: 100% 50%;
-    -moz-transform-origin: 100% 50%;
-    -ms-transform-origin: 100% 50%;
-    -o-transform-origin: 100% 50%;
-    transform-origin: 100% 50%;
-    opacity: 0;
-}
-.side-menu ul li a:hover span.menu-title {
-    opacity: 1;
-}
-.side-menu ul li a span.dot {
-    position: relative;
-    background-color: #dd5138;
-    border-radius: 2em;
-    height: 10px;
-    width: 10px;
-    -webkit-transition: all 0.3s;
-  	-moz-transition: all 0.3s;
-  	transition: all 0.3s;
-}
-.side-menu ul li a:hover span.dot {
-	transform: scale(1.8);
-}
-
-
 .hero-header {
 	background: #016cc7;
-	min-height: 600px;
+	min-height: 400px;
 	padding: 5em;
 	color: #fff;
 }
@@ -122,8 +67,9 @@ a:hover, a:focus, a:active, a:visited {
     letter-spacing: 1px;
     margin: 2em 0;
 }
-.hero-header .logo {
-	max-width: 180px;
+.logo {
+    max-width: 100%;
+    height: auto;
 }
 .hero-header .btn {
 	margin-top: 3em;
@@ -218,7 +164,6 @@ a span.ti-twitter-alt {
 
 .footer {
     background-color: #2a2a2a;
-    margin-top: 30px;
     color: #fff;
 }
 .footer p {
@@ -302,8 +247,30 @@ ul.footer-menu li a:hover {
     position: fixed;
 }
 .navbar {
-    width: 100%
+    background: rgba(255,255,255,1);
+    color: rgba(0,0,0,1);
+    margin-bottom: 0px;
+    
 }
+.navbar-header {
+    height: 70px;
+}
+.navbar-nav {
+    float: right;
+    margin-top: 10px;
+}
+.navbar-brand {
+    padding: 0px;
+    height: 100%;
+  }
+  .navbar-brand>img {
+    height: 100%;
+    padding-left: 7px;
+    width: auto;
+  }
+  .navbar-toggle {
+      margin-top: 15px;
+  }
 
 /* ========================================
     Custom Media Queries
